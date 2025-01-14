@@ -1,4 +1,4 @@
-package ahmet.week1;
+package ahmet_codes.week1;
 
 public class OddAndEven {
     public static void main(String[] args) {
@@ -11,9 +11,11 @@ public class OddAndEven {
     }
     public static String identify(int number){
 
-        if (number%2==0){
+        if (number%2==0)
+        {
             return "even";
-        }else{
+        }else
+        {
             return "odd";
         }
     }
