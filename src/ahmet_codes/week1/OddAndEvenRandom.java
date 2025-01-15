@@ -13,7 +13,7 @@ public class OddAndEvenRandom {
             System.out.println("Number is Zero");
         }
         else if (number%2==0) {
-            System.out.println(number+" number is Even");
+            System.out.println("Number is Even");
         }else
         {
             System.out.println("Number is Odd");
