@@ -2,7 +2,7 @@ package ahmet_codes.week1;
 
 import java.util.Scanner;
 
-public class OddAndEven2 {
+public class OddAndEvenScanner {
     public static void main(String[] args) {
 
         Scanner scanner=new Scanner(System.in);
