@@ -15,7 +15,7 @@ public class FinRa {
                  System.out.println("RA");
             }
             else
-                    System.out.println(i+"  IS NOT FINRA");
+                System.out.println(i+"  IS NOT FINRA");
 
         }
     }
