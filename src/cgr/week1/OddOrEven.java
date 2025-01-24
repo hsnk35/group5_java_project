@@ -1,7 +1,10 @@
-package ahmet_codes.week1;
+package cgr.week1;
 
-public class OddAndEven {
+public class OddOrEven {
+
     public static void main(String[] args) {
+
+
 
         int num = 81;
 
@@ -16,6 +19,6 @@ public class OddAndEven {
             return "even";
         } else {
             return "odd";
-        }
     }
+}
 }
