@@ -5,7 +5,7 @@ public class OddAndEven {
 
     public static void main(String[] args) {
 
-        int num = 81;
+        int num = 80;
 
         String result = returnOddOrEven(num);
         System.out.println(result);
