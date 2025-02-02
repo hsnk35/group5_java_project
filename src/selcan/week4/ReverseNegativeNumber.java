@@ -3,7 +3,7 @@ package selcan.week4;
 public class ReverseNegativeNumber {
     public static void main(String[] args) {
 
-        int num = 12345;
+        int num = 123456;
         int resultNumber = reverse(num);
         System.out.println(resultNumber); // Çıktı
     }
