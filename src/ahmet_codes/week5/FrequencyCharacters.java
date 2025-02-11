@@ -15,7 +15,6 @@ public class FrequencyCharacters {
 
         int i, j;
         int[] frq = new int[str.length()];
-        String resultStr = "";
 
         char[] string = str.toCharArray();
 
