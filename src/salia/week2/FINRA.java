@@ -1,4 +1,4 @@
-package salia.week1;
+package salia.week2;
 
 public class FINRA {
     public static void main(String[] args) {
