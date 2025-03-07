@@ -4,23 +4,21 @@ public class FrequencyCharacters {
     public static void main(String[] args) {
 
 
-        String str = "AAABBCDD";
+        String str = "AAABBCDD";  //a String named str is defined
         //expected=A3B2C1D2
 
-        frequencyCharacters(str);
+        frequencyCharacters(str); //call a method for this solve way
 
     }
 
     private static void frequencyCharacters(String str) {
 
-        int i, j;
         int[] frq = new int[str.length()];
+        char[] string = str.toCharArray();  //created str string is converted to a char array.
 
-        char[] string = str.toCharArray();
-
-        for (i = 0; i < string.length; i++) {
+        for (int i = 0; i < string.length; i++) {  //I have started a nested for loop
             frq[i] = 1;
-            for (j = i + 1; j < string.length; j++) {
+            for (int j = i + 1; j < string.length; j++) {
                 if (string[i] == string[j]) {
                     frq[i]++;
                     string[j] = '0';
@@ -28,7 +26,7 @@ public class FrequencyCharacters {
             }
         }
 
-        for (i = 0; i < frq.length; i++) {
+        for (int i = 0; i < frq.length; i++) {
             if (string[i] != ' ' && string[i] != '0') {
                 System.out.print(string[i] + "" + frq[i]);
             }
