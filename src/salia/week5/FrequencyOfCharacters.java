@@ -3,10 +3,16 @@ package salia.week5;
 public class FrequencyOfCharacters {
     public static void main(String[] args) {
 
-
-
         String str="AAABBBCCC";
+        //expected=A3 B3 C3
+        frequencyOfCharacters(str);
 
+
+
+
+    }
+
+    private static void frequencyOfCharacters(String str) {
         int[] freq= new int[str.length()];    //
         char[] str1=str.toCharArray();        //
 
@@ -22,12 +28,10 @@ public class FrequencyOfCharacters {
 
         for (int i = 0; i < freq.length; i++) {
             if (str1[i]!=' ' && str1[i]!='0'){
-                System.out.println(str1[i]+ "  "+ freq[i]);
-        }
-
-
+                System.out.print(str1[i]+ ""+ freq[i]+" ");
+            }
         }
 
     }
-    
+
 }
