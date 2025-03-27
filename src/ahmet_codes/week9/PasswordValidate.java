@@ -11,7 +11,7 @@ public class PasswordValidate {
 
     public static void main(String[] args) {
 
-        String password = "Password.1";
+        String password = "Password#1";
         System.out.println(isValidatePassword(password));
     }
     public static boolean isValidatePassword(String password) {
@@ -28,6 +28,10 @@ public class PasswordValidate {
         if (!password.matches(".*[1-2].*")){
             return false;
         }
+        if (!password.matches(".*[\\W].*")){
+            return false;
+        }
             return true;
+
     }
 }
