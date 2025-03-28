@@ -12,9 +12,10 @@ public class PasswordValidate {
 
     public static void main(String[] args) {
 
-        String password = "Password.1";
+        String password = "Psdass.215";
         System.out.println(isValidatePassword(password));
 
+        Character.isDigit(password.charAt(0));
     }
 
     public static boolean isValidatePassword(String password) {
@@ -24,7 +25,7 @@ public class PasswordValidate {
         }
         if (!password.matches(".*[A-Z].*")
                 || !password.matches(".*[a-z].*")
-                || !password.matches(".*[1-2].*")
+                || !password.matches(".*[1-9].*")
                 || !password.matches(".*[\\W].*")) {  ///.* herhangibir karekterin tekrar edebilme durumu
             return false;
         }
