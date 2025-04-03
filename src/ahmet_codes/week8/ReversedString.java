@@ -11,7 +11,7 @@ public class ReversedString {
     }
 
     public static String reverseString(String word) {
-        String result="";
+        String result="";                   ///iteration part
         for (int i = word.length()-1; i >=0; i--) {
              result+=word.charAt(i);
 
