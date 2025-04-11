@@ -5,12 +5,10 @@ import java.util.Arrays;
 public class SortedArray {
     public static void main(String[] args) {
 
-        int[] arr = {10, 9, 8, 7};
-        int[] sorted = sortArray(arr); // Sıralama işlemi tamamlandı
+        int[] arr = {2, 10, 9, 1, 8, 7};
+        int[] sorted = sortArray(arr); // Sıralama işlemi tamamlandı and returned
 
-        System.out.println("Sorted Array");
-        System.out.println("sorted = " + Arrays.toString(sorted));
-
+        System.out.println("Sorted Array = " + Arrays.toString(sorted));
     }
 
     public static int[] sortArray(int[] arr) {
@@ -19,13 +17,13 @@ public class SortedArray {
             boolean swapped = false; // Bu, herhangi bir değişim olup olmadığını kontrol eder
 
             for (int j = 0; j < arr.length - i - 1; j++) {
-                // ele alınan eleman sonraki elemandan büyükse, yer değişir
+                // ele alınan eleman bir sonraki elemandan büyükse, yer değişir
                 if (arr[j] > arr[j + 1]) {
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
 
-                    swapped = true; // Değişim olduysa true
+                    swapped = true; // Değişim olduysa true olur
                 }
             }
 
