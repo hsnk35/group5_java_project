@@ -14,23 +14,21 @@ public class SortedArray {
     public static int[] sortArray(int[] arr) {
 
         for (int i = 0; i < arr.length - 1; i++) {
-            boolean swapped = false; // Bu, herhangi bir değişim olup olmadığını kontrol eder
+            boolean swapped = false; // Bu, herhangi bir değişim olup olmadığını kontrol et
 
             for (int j = 0; j < arr.length - i - 1; j++) {
-                // ele alınan eleman bir sonraki elemandan büyükse, yer değişir
+                // ele alınan eleman bir sonraki elemandan büyükse, yer değiştir
                 if (arr[j] > arr[j + 1]) {
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
                     arr[j + 1] = temp;
 
-                    swapped = true; // Değişim olduysa true olur
+                    swapped = true; // Değişim olduysa true
                 }
             }
-
             if (!swapped) break; // Eğer bu turda hiç değişim olmadıysa, dizi zaten sıralıdır
         }
-
-        return arr; // Sıralanmış diziyi döndür
+        return arr; // Sıralanmış diziyi döndürdü
     }
 
 
